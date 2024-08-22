@@ -1,6 +1,6 @@
 # CSIS_1410
 
-#If you are trying to use this repo for team work on a project, please follow the following steps. I will be your code review buddy spoken of in these instructions. You will need Git For Windows installed on your machine. Contact me first and we can get that setup if you don't already have it and know how to use it as there are specific settings that need to be checked during the install process.
+If you are trying to use this repo for team work on a project, please follow the following steps. I will be your code review buddy spoken of in these instructions. You will need Git For Windows installed on your machine. Contact me first and we can get that setup if you don't already have it and know how to use it as there are specific settings that need to be checked during the install process.
 
 # Code Review
 
