@@ -2,7 +2,7 @@ package helloWorld;
 
 public class GettingStarted {
     /* 
-        The GettingStarted class just prints:
+        The GettingStarted class prints three lines:
         1. Hello World 
         2. One line of my choosing 
         3. My first and last name
