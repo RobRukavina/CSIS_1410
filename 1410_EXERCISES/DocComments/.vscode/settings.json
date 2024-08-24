@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "src/**/*.jar"
+    ],
+    "javadoc-tools.generateJavadoc.isUsingPwsh": true,
+    "javadoc-tools.generateJavadoc.workspaceSourceFolder": "src"
+}
