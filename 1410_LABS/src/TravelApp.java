@@ -1,4 +1,5 @@
-package docComments;
+import docComments.Car;
+import docComments.TripPlanner;
 
 public class TravelApp {
     public static void main(String[] args) throws Exception {
