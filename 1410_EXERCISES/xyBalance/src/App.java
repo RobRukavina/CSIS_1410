@@ -9,18 +9,55 @@ public class App {
         // System.out.println("Chocolate: " + repeatFront("Chocolate", 4));
         // System.out.println("Chocolate: " + repeatFront("xyz", 3));
 
-        System.out.println("AAxyzBB: " + xyzMiddle("AAxyzBB"));
-        System.out.println("AxyzBBB: " + xyzMiddle("AxyzBBB"));
-        System.out.println("AxyzBBBB: " + xyzMiddle("AxyzBBBB"));
-        System.out.println("AAAxyzB: " + xyzMiddle("AAAxyzB"));
-        System.out.println("AAAAxyzBB: " + xyzMiddle("AAAAxyzBB"));
-        System.out.println("AAAAAxyzBBB: " + xyzMiddle("AAAAAxyzBBB"));
-        System.out.println("The next should be true unless noted otherwise");
-        System.out.println("xyzAxyzBBB: " + xyzMiddle("xyzAxyzBBB"));
-        System.out.println("xyzAxyzBxyz: " + xyzMiddle("xyzAxyzBxyz"));
-        System.out.println("xyzxyzAxyzxyzxy: " + xyzMiddle("xyzxyzAxyzxyzxy") + " Should be false");
-        System.out.println("xyzxyzxyzBxyzxyz: " + xyzMiddle("xyzxyzxyzBxyzxyz"));
-        System.out.println("xyzxyzAxyzxyzxyz: " + xyzMiddle("xyzxyzAxyzxyzxyz"));
+        // System.out.println("AAxyzBB: " + xyzMiddle("AAxyzBB"));
+        // System.out.println("AxyzBBB: " + xyzMiddle("AxyzBBB"));
+        // System.out.println("AxyzBBBB: " + xyzMiddle("AxyzBBBB"));
+        // System.out.println("AAAxyzB: " + xyzMiddle("AAAxyzB"));
+        // System.out.println("AAAAxyzBB: " + xyzMiddle("AAAAxyzBB"));
+        // System.out.println("AAAAAxyzBBB: " + xyzMiddle("AAAAAxyzBBB"));
+        // System.out.println("The next should be true unless noted otherwise");
+        // System.out.println("xyzAxyzBBB: " + xyzMiddle("xyzAxyzBBB"));
+        // System.out.println("xyzAxyzBxyz: " + xyzMiddle("xyzAxyzBxyz"));
+        // System.out.println("xyzxyzAxyzxyzxy: " + xyzMiddle("xyzxyzAxyzxyzxy") + " Should be false");
+        // System.out.println("xyzxyzxyzBxyzxyz: " + xyzMiddle("xyzxyzxyzBxyzxyz"));
+        // System.out.println("xyzxyzAxyzxyzxyz: " + xyzMiddle("xyzxyzAxyzxyzxyz"));
+        
+        // System.out.println(oneTwo("abc"));
+        // System.out.println(oneTwo("tca"));
+        // System.out.println(oneTwo("tcagdo"));
+
+        System.out.println(plusOut("12xy34", "xy"));
+        System.out.println(plusOut("12xy34", "1"));
+        System.out.println(plusOut("12xy34xyabczy", "xy"));
+    }
+
+    public static String plusOut(String str, String word){
+        StringBuilder res = new StringBuilder();
+        int wordLength = word.length();
+        int i = 0;
+
+        while (i < str.length()) {
+            if (i <= str.length() - wordLength && str.substring(i, i + wordLength).equals(word)) {
+                res.append(word);
+                i += wordLength;
+            } else {
+                res.append('+');
+                i++;
+            }
+        }
+        return res.toString();
+    }
+
+    public static String oneTwo(String str){
+        StringBuilder res = new StringBuilder();
+        
+        for (int i = 0; i + 2 < str.length(); i += 3) {
+            res.append(str.charAt(i + 1))
+                  .append(str.charAt(i + 2))
+                  .append(str.charAt(i));
+        }
+        
+        return res.toString();
     }
 
     public static boolean xyzMiddle(String str) {
