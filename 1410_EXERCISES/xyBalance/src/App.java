@@ -2,6 +2,7 @@
 
 public class App {
     public static void main(String[] args) throws Exception {
+/*
         // boolean test = 
         // System.out.println(xyBalance("bxyb"));
         // System.out.println(xyBalance("12xabxxydxyxyzz"));
@@ -26,9 +27,34 @@ public class App {
         // System.out.println(oneTwo("tca"));
         // System.out.println(oneTwo("tcagdo"));
 
-        System.out.println(plusOut("12xy34", "xy"));
-        System.out.println(plusOut("12xy34", "1"));
-        System.out.println(plusOut("12xy34xyabczy", "xy"));
+        // System.out.println(plusOut("12xy34", "xy"));
+        // System.out.println(plusOut("12xy34", "1"));
+        // System.out.println(plusOut("12xy34xyabczy", "xy"));
+
+        // System.out.println(bunnyEars(0));
+        // System.out.println(bunnyEars(1));
+        // System.out.println(bunnyEars(2));
+*/
+        System.out.println(fibonacci(0));
+        System.out.println(fibonacci(1));
+        System.out.println(fibonacci(2));
+    }
+
+    public static int fibonacci(int n){
+        if(n == 0){
+            return 0;
+        } else {
+            return fibonacci(n - 1) + n;
+        }
+    }
+
+    public static int bunnyEars(int bunnies) {
+        System.out.println("bunnies In: " + bunnies);
+        if(bunnies == 0){
+            return 0;
+        } else {
+           return 2 + bunnyEars(bunnies - 1);
+        }
     }
 
     public static String plusOut(String str, String word){
