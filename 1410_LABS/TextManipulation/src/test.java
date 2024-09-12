@@ -1,6 +1,6 @@
 public class test {
     public static void main(String[] args) throws Exception {
-        System.out.println(harmonic(-5));   
+        System.out.println(harmonic(-20));   
     }
     public static double harmonic(int n) {
 		if(n == 0) {
