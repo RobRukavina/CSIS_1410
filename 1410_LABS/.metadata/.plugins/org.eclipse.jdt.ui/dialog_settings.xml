@@ -41,7 +41,7 @@
 	</section>
 	<section name="JavaProjectWizard.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="201"/>
-		<item key="DIALOG_Y_ORIGIN" value="-42"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
 		<item key="DIALOG_WIDTH" value="623"/>
 		<item key="DIALOG_HEIGHT" value="667"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
@@ -86,7 +86,8 @@
 		<item key="ToStringTemplateSelected" value="0"/>
 		<item key="FinalModifier" value="false"/>
 		<item key="SynchronizedModifier" value="false"/>
-		<item key="Comments" value="false"/>
+		<item key="Comments" value="true"/>
+		<item key="VisibilityModifier" value="1"/>
 	</section>
 	<section name="DialogBounds_GenerateToStringDialog">
 		<item key="DIALOG_X_ORIGIN" value="272"/>
@@ -124,5 +125,39 @@
 			<item key="DIALOG_HEIGHT" value="596"/>
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 		</section>
+	</section>
+	<section name="SourceActionDialog.constructors">
+		<item key="VisibilityModifier" value="1"/>
+		<item key="FinalModifier" value="false"/>
+		<item key="SynchronizedModifier" value="false"/>
+		<item key="Comments" value="true"/>
+	</section>
+	<section name="GenerateConstructorUsingFieldsSelectionDialog">
+		<item key="OmitCallToSuper" value="false"/>
+	</section>
+	<section name="DialogBounds_GenerateConstructorUsingFieldsSelectionDialog">
+		<item key="DIALOG_X_ORIGIN" value="272"/>
+		<item key="DIALOG_Y_ORIGIN" value="145"/>
+		<item key="DIALOG_WIDTH" value="425"/>
+		<item key="DIALOG_HEIGHT" value="569"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="AddGetterSetterDialog">
+		<item key="SortOrdering" value="true"/>
+		<item key="RemoveFinal" value="false"/>
+	</section>
+	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
+		<item key="DIALOG_X_ORIGIN" value="272"/>
+		<item key="DIALOG_Y_ORIGIN" value="134"/>
+		<item key="DIALOG_WIDTH" value="425"/>
+		<item key="DIALOG_HEIGHT" value="585"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="NewSourceFolderCreationWizard.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="746"/>
+		<item key="DIALOG_Y_ORIGIN" value="257"/>
+		<item key="DIALOG_WIDTH" value="438"/>
+		<item key="DIALOG_HEIGHT" value="405"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>
