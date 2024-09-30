@@ -1,5 +1,6 @@
 package nuisance;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -9,6 +10,7 @@ import java.util.List;
  */
 public class Butterfly extends Insect {
 	private List<String> colors;
+//	List<String> dcColors = this.colors;
 	/**
 	 * Constructs a Butterfly object by invoking superclass constructor
 	 * 
@@ -17,7 +19,7 @@ public class Butterfly extends Insect {
 	 */
 	public Butterfly(String species, List<String> colors) {
 		super(species);
-		this.colors = colors;
+		this.colors = List.copyOf(colors);
 	}
 
 	/**
@@ -34,13 +36,12 @@ public class Butterfly extends Insect {
 	 * @return this butterfly object's colors as a defensive copy of List<String> colors.
 	 */
 	public List<String> getColors(){
-		List<String> dcColors = this.colors;
-		return dcColors;
+		return new ArrayList<String>(colors);
 	}
 
 	@Override
 	public String toString() {
-		return "Butterfly [colors=" + colors + "]";
+		return super.getSpecies() + " " + this.getColors().toString();
 	}
 	
 	
