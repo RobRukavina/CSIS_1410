@@ -116,6 +116,7 @@
 		<item key="JarManifestWizardPage.MANIFEST_LOCATION" value=""/>
 		<item key="JarManifestWizardPage.SEAL_JAR" value="false"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\rehab\OneDrive\Desktop\LabInterface.jar"/>
 			<item value="C:\Users\rehab\OneDrive\Desktop\LabPolymorphism.jar"/>
 		</list>
 		<section name="JarPackageWizard.dialogBounds">
@@ -154,10 +155,17 @@
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="NewSourceFolderCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="746"/>
+		<item key="DIALOG_X_ORIGIN" value="526"/>
 		<item key="DIALOG_Y_ORIGIN" value="257"/>
 		<item key="DIALOG_WIDTH" value="438"/>
 		<item key="DIALOG_HEIGHT" value="405"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="NewInterfaceCreationWizard.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="261"/>
+		<item key="DIALOG_Y_ORIGIN" value="216"/>
+		<item key="DIALOG_WIDTH" value="447"/>
+		<item key="DIALOG_HEIGHT" value="463"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>
