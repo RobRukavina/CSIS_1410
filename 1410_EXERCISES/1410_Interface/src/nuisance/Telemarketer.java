@@ -28,7 +28,7 @@ public class Telemarketer extends Person implements Nuisance {
 	
 	@Override
 	public String annoy() {
-		return super.getName() + "annoys by giving a sales pitch";
+		return super.getName() + " annoys by giving a sales pitch";
 	}
 
 }

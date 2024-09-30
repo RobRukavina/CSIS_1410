@@ -1,5 +1,7 @@
 package nuisance;
 
+import java.util.Objects;
+
 /**
  * Represents a Person object
  *
@@ -33,6 +35,16 @@ public class Person {
 	 */
 	public int getAge() {
 		return age;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!(obj instanceof Person))
+			return false;
+		Person other = (Person) obj;
+		return age == other.age && Objects.equals(name, other.name);
 	}
 	
 	@Override

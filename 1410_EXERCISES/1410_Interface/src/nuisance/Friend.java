@@ -26,7 +26,7 @@ public class Friend extends Person {
 	 * @return string
 	 */
 	public String chill() {
-		return super.getName() + "is chilling";
+		return super.getName() + " is chilling";
 	}
 
 	/**
@@ -38,19 +38,29 @@ public class Friend extends Person {
 	 */
 	public String play(Friend[] friends) {
 		StringBuilder sb = new StringBuilder();
-		sb.append("playing " + this.hobby);
+		sb.append("playing " + this.hobby.toString());
 		
 		if(friends.length > 0) {
-			int idx = 0;
-			for(Friend f : friends) {
-				if(idx == 0 && idx == friends.length - 1) {
-					sb.append(" with " + f.getName() + ".");
-				} if(idx > 0 && idx == friends.length - 1){
-					sb.append(", and " + f.getName() + ".");
-				}else {
-					sb.append(", " + f.getName());
+			for(int i = 0; i < friends.length; i++) {
+				Friend f = friends[i];
+				if(i == 0) {
+					if(friends.length == 1) {
+						sb.append(" with " + f.getName() + ".");
+					} else if(friends.length > 1) {
+						sb.append(" with " + f.getName());
+					} else {
+						sb.append(" with " + f.getName());
+					}
+				} else {
+					if(i != friends.length - 1){
+						sb.append(", " + f.getName());
+					}
+					if(i == friends.length - 1 && friends.length > 2) {
+						sb.append(", and " + f.getName() + ".");
+					} else if(i== friends.length - 1 && friends.length == 2) {
+						sb.append(" and " + f.getName() + ".");
+					}
 				}
-				idx++;
 			}
 		}
 		
@@ -58,8 +68,25 @@ public class Friend extends Person {
 	}
 
 	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (!super.equals(obj)) {
+			return false;
+		}
+		if (!(obj instanceof Friend)) {
+			return false;
+		}
+		
+		Friend other = (Friend) obj;
+		
+		return hobby == other.hobby;
+	}
+
+	@Override
 	public String toString() {
-		return super.toString() + this.hobby;
+		return super.toString() + " " + this.hobby;
 	}
 	
 	

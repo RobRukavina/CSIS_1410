@@ -21,7 +21,7 @@ public class Mosquito extends Insect implements Nuisance{
 	 * @return string
 	 */
 	public String buzz() {
-		return super.getSpecies() + "buzzing around";
+		return super.getSpecies() + " buzzing around.";
 	}
 
 	@Override

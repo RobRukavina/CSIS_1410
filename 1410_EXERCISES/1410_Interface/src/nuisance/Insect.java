@@ -27,6 +27,6 @@ public class Insect {
 
 	@Override
 	public String toString() {
-		return this.getClass() + ": " + this.getSpecies();
+		return this.getClass().getSimpleName() + ": " + this.getSpecies();
 	}
 }
