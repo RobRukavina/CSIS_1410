@@ -768,7 +768,6 @@
     <bindings xmi:id="_cZ9vM2pAEe-2eJ-n824ZNg" keySequence="ALT+SHIFT+D T" command="_cZl7xWpAEe-2eJ-n824ZNg"/>
     <bindings xmi:id="_cZ9vNGpAEe-2eJ-n824ZNg" keySequence="ALT+SHIFT+D J" command="_cZo_L2pAEe-2eJ-n824ZNg"/>
     <bindings xmi:id="_cZ9vNWpAEe-2eJ-n824ZNg" keySequence="ALT+SHIFT+D Q" command="_cZoX9GpAEe-2eJ-n824ZNg"/>
-    <bindings xmi:id="_gSgjkGsoEe-vaqQ8MbKrMA" keySequence="CTRL+6" command="_gSUWUGsoEe-vaqQ8MbKrMA"/>
   </bindingTables>
   <bindingTables xmi:id="_cZ42p2pAEe-2eJ-n824ZNg" elementId="org.eclipse.jdt.ui.javaEditorScope" bindingContext="_cZspcWpAEe-2eJ-n824ZNg">
     <bindings xmi:id="_cZ42qGpAEe-2eJ-n824ZNg" keySequence="CTRL+SHIFT+P" command="_cZo_F2pAEe-2eJ-n824ZNg"/>
